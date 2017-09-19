@@ -1,0 +1,106 @@
+object frmReport: TfrmReport
+  Left = 225
+  Top = 296
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'frmReport'
+  ClientHeight = 102
+  ClientWidth = 153
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ppReport1: TppReport
+    PrinterSetup.BinName = 'Default'
+    PrinterSetup.DocumentName = 'Report'
+    PrinterSetup.PaperName = 'A4'
+    PrinterSetup.PrinterName = 'Default'
+    PrinterSetup.mmMarginBottom = 6350
+    PrinterSetup.mmMarginLeft = 6350
+    PrinterSetup.mmMarginRight = 6350
+    PrinterSetup.mmMarginTop = 6350
+    PrinterSetup.mmPaperHeight = 297000
+    PrinterSetup.mmPaperWidth = 210000
+    PrinterSetup.PaperSize = 9
+    Units = utMillimeters
+    AllowPrintToArchive = True
+    AllowPrintToFile = True
+    CachePages = True
+    DeviceType = 'Screen'
+    OutlineSettings.CreateNode = True
+    OutlineSettings.CreatePageNodes = True
+    OutlineSettings.Enabled = True
+    SavePrinterSetup = True
+    ShowAutoSearchDialog = True
+    Left = 56
+    Top = 8
+    Version = '7.0'
+    mmColumnWidth = 0
+    object ppHeaderBand1: TppHeaderBand
+      mmBottomOffset = 0
+      mmHeight = 13229
+      mmPrintPosition = 0
+    end
+    object ppDetailBand1: TppDetailBand
+      mmBottomOffset = 0
+      mmHeight = 13229
+      mmPrintPosition = 0
+    end
+    object ppFooterBand1: TppFooterBand
+      mmBottomOffset = 0
+      mmHeight = 13229
+      mmPrintPosition = 0
+    end
+  end
+  object ppDesigner1: TppDesigner
+    AllowDataSettingsChange = True
+    Caption = 'Report Builder'
+    DataSettings.SessionType = 'BDESession'
+    DataSettings.AllowEditSQL = True
+    DataSettings.CollationType = ctASCII
+    DataSettings.DatabaseType = dtParadox
+    DataSettings.IsCaseSensitive = True
+    DataSettings.SQLType = sqSQL2
+    Position = poScreenCenter
+    Report = ppReport1
+    IniStorageType = 'IniFile'
+    IniStorageName = '($WINSYS)\RBuilder.ini'
+    WindowHeight = 400
+    WindowLeft = 100
+    WindowTop = 50
+    WindowWidth = 600
+    WindowState = wsMaximized
+    Left = 16
+    Top = 8
+  end
+  object ppDataDictionary1: TppDataDictionary
+    BuilderSettings.SessionType = 'BDESession'
+    FieldFieldNames.AutoSearch = 'AutoSearch'
+    FieldFieldNames.DataType = 'DataType'
+    FieldFieldNames.FieldName = 'FieldName'
+    FieldFieldNames.FieldAlias = 'FieldAlias'
+    FieldFieldNames.Mandatory = 'Mandatory'
+    FieldFieldNames.Searchable = 'Searchable'
+    FieldFieldNames.Selectable = 'Selectable'
+    FieldFieldNames.Sortable = 'Sortable'
+    FieldFieldNames.TableName = 'TableName'
+    JoinFieldNames.TableName1 = 'TableName1'
+    JoinFieldNames.TableName2 = 'TableName2'
+    JoinFieldNames.JoinType = 'JoinType'
+    JoinFieldNames.FieldNames1 = 'FieldNames1'
+    JoinFieldNames.FieldNames2 = 'FieldNames2'
+    JoinFieldNames.Operators = 'Operators'
+    TableFieldNames.TableName = 'TableName'
+    TableFieldNames.TableAlias = 'TableAlias'
+    UserName = 'DataDictionary1'
+    Left = 64
+    Top = 64
+  end
+end
